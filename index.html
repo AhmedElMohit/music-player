@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="stylesheet" href="style.css">
+ 
+  <!-- font-awesome -->
+ <script src="https://kit.fontawesome.com/019bf20f6a.js" crossorigin="anonymous"></script>
+ <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+ <!----header start here----->
+ <header >
+  <i class="fa-shuffle1 fa-sharp fa-solid fa-shuffle"></i>
+  <i class='fa-solid fa-arrow-left'></i>
+  <p>Music player</p>
+  <i class="fa-solid fa-heart"></i>
+  <i class="fa-solid fa-share-nodes"></i>
+  <i class="fa-solid fa-ellipsis-vertical"></i>
+ </header>
+ <!-------main start here ----->
+ <main>
+  <input type="range" class="volume"
+  max='100'
+  min='0'
+  value='50'>
+  <i class="fa-solid fa-volume-high"></i>
+  <div class="title-container">
+     <p class="titleText">
+     </p>
+     <p class='author'></p>
+  </div>
+      <div class="stDot"></div>
+      <div class="ndDot"></div>
+        <input type="range" class="slider"
+        min='0'
+        max='100'
+        value='500'>
+ </main>
+ <!-------footer start here ----->
+ <footer>
+ 
+   <div class="main-section">
+      
+        
+ <div class="controlBtns">
+     <audio >
+     </audio>
+     <div class="downContainer">
+        <i class="fa-solid fa-rotate-left"></i>
+           <span class="decreaseTime">15</span>
+     </div>
+     <i class="fa-sharp fa-solid fa-backward"></i>
+     <i id="play" class="fa-regular fa-circle-play"></i>
+     <i class="fa-sharp fa-solid fa-forward"></i>
+      <div class="upContainer">
+         <span class="increaseTime">15
+         </span>
+         <i class="fa-solid fa-rotate-right"></i>
+      </div>
+ </div>
+   </div>
+   <div class="last-section">
+    <p class='speed'></p>
+    <div class="timeContainer">
+       <p class='musicTime'><span class="timeNow"></span></span> / <span class="fullTime"></span></p>
+    </div>
+    <i id='btn' class="fa-solid fa-list-ul"></i>
+   </div>
+  
+ </footer>
+    <!---playList starting here-->
+ <div class='playList'>
+    <div class='header'>
+        <div class="icons-container">
+           <i id='hideBtn' class="fa-solid fa-arrow-left"></i> 
+           <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div> 
+        <h3 class="heading">
+            liked songs
+        </h3>
+                <div class="btn-container">
+            <button class="playBtn">
+                <i class="fa-solid fa-play"></i>
+                <span class="btn-name">play</span>
+            </button>
+            <button id="suffleBtn">
+                <i class="fa-solid fa-shuffle"></i>
+                <span class="btn-name">shuffle</span>
+            </button>
+        </div>
+    </div>
+  <!----Main play list start here-->
+    <div class='main'>
+    
+    </div> 
+</div>
+ <script type="text/javascript" charset="utf-8" src='app.js'>
+ </script>
+</body>
+</html>
